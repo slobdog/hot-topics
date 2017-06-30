@@ -1,0 +1,244 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$45-sec-name: '45_sec';
+$45-sec-x: 1860px;
+$45-sec-y: 1080px;
+$45-sec-offset-x: -1860px;
+$45-sec-offset-y: -1080px;
+$45-sec-width: 438px;
+$45-sec-height: 438px;
+$45-sec-total-width: 2718px;
+$45-sec-total-height: 1616px;
+$45-sec-image: '../sprite/sprite.png';
+$45-sec: (1860px, 1080px, -1860px, -1080px, 438px, 438px, 2718px, 1616px, '../sprite/sprite.png', '45_sec', );
+$assets-x-name: 'assets_X';
+$assets-x-x: 2019px;
+$assets-x-y: 965px;
+$assets-x-offset-x: -2019px;
+$assets-x-offset-y: -965px;
+$assets-x-width: 99px;
+$assets-x-height: 97px;
+$assets-x-total-width: 2718px;
+$assets-x-total-height: 1616px;
+$assets-x-image: '../sprite/sprite.png';
+$assets-x: (2019px, 965px, -2019px, -965px, 99px, 97px, 2718px, 1616px, '../sprite/sprite.png', 'assets_X', );
+$assets-add-name: 'assets_add';
+$assets-add-x: 2529px;
+$assets-add-y: 1080px;
+$assets-add-offset-x: -2529px;
+$assets-add-offset-y: -1080px;
+$assets-add-width: 97px;
+$assets-add-height: 98px;
+$assets-add-total-width: 2718px;
+$assets-add-total-height: 1616px;
+$assets-add-image: '../sprite/sprite.png';
+$assets-add: (2529px, 1080px, -2529px, -1080px, 97px, 98px, 2718px, 1616px, '../sprite/sprite.png', 'assets_add', );
+$assets-circle-check-name: 'assets_circle_check';
+$assets-circle-check-x: 2118px;
+$assets-circle-check-y: 965px;
+$assets-circle-check-offset-x: -2118px;
+$assets-circle-check-offset-y: -965px;
+$assets-circle-check-width: 99px;
+$assets-circle-check-height: 97px;
+$assets-circle-check-total-width: 2718px;
+$assets-circle-check-total-height: 1616px;
+$assets-circle-check-image: '../sprite/sprite.png';
+$assets-circle-check: (2118px, 965px, -2118px, -965px, 99px, 97px, 2718px, 1616px, '../sprite/sprite.png', 'assets_circle_check', );
+$assets-clock-name: 'assets_clock';
+$assets-clock-x: 2217px;
+$assets-clock-y: 965px;
+$assets-clock-offset-x: -2217px;
+$assets-clock-offset-y: -965px;
+$assets-clock-width: 98px;
+$assets-clock-height: 97px;
+$assets-clock-total-width: 2718px;
+$assets-clock-total-height: 1616px;
+$assets-clock-image: '../sprite/sprite.png';
+$assets-clock: (2217px, 965px, -2217px, -965px, 98px, 97px, 2718px, 1616px, '../sprite/sprite.png', 'assets_clock', );
+$assets-fire-name: 'assets_fire';
+$assets-fire-x: 2298px;
+$assets-fire-y: 1080px;
+$assets-fire-offset-x: -2298px;
+$assets-fire-offset-y: -1080px;
+$assets-fire-width: 231px;
+$assets-fire-height: 377px;
+$assets-fire-total-width: 2718px;
+$assets-fire-total-height: 1616px;
+$assets-fire-image: '../sprite/sprite.png';
+$assets-fire: (2298px, 1080px, -2298px, -1080px, 231px, 377px, 2718px, 1616px, '../sprite/sprite.png', 'assets_fire', );
+$assets-megaphone-name: 'assets_megaphone';
+$assets-megaphone-x: 1920px;
+$assets-megaphone-y: 0px;
+$assets-megaphone-offset-x: -1920px;
+$assets-megaphone-offset-y: 0px;
+$assets-megaphone-width: 798px;
+$assets-megaphone-height: 892px;
+$assets-megaphone-total-width: 2718px;
+$assets-megaphone-total-height: 1616px;
+$assets-megaphone-image: '../sprite/sprite.png';
+$assets-megaphone: (1920px, 0px, -1920px, 0px, 798px, 892px, 2718px, 1616px, '../sprite/sprite.png', 'assets_megaphone', );
+$assets-mouth-name: 'assets_mouth';
+$assets-mouth-x: 2412px;
+$assets-mouth-y: 965px;
+$assets-mouth-offset-x: -2412px;
+$assets-mouth-offset-y: -965px;
+$assets-mouth-width: 98px;
+$assets-mouth-height: 96px;
+$assets-mouth-total-width: 2718px;
+$assets-mouth-total-height: 1616px;
+$assets-mouth-image: '../sprite/sprite.png';
+$assets-mouth: (2412px, 965px, -2412px, -965px, 98px, 96px, 2718px, 1616px, '../sprite/sprite.png', 'assets_mouth', );
+$assets-speech-bubble-name: 'assets_speech bubble';
+$assets-speech-bubble-x: 600px;
+$assets-speech-bubble-y: 1080px;
+$assets-speech-bubble-offset-x: -600px;
+$assets-speech-bubble-offset-y: -1080px;
+$assets-speech-bubble-width: 630px;
+$assets-speech-bubble-height: 506px;
+$assets-speech-bubble-total-width: 2718px;
+$assets-speech-bubble-total-height: 1616px;
+$assets-speech-bubble-image: '../sprite/sprite.png';
+$assets-speech-bubble: (600px, 1080px, -600px, -1080px, 630px, 506px, 2718px, 1616px, '../sprite/sprite.png', 'assets_speech bubble', );
+$assets-subtract-name: 'assets_subtract';
+$assets-subtract-x: 2315px;
+$assets-subtract-y: 965px;
+$assets-subtract-offset-x: -2315px;
+$assets-subtract-offset-y: -965px;
+$assets-subtract-width: 97px;
+$assets-subtract-height: 97px;
+$assets-subtract-total-width: 2718px;
+$assets-subtract-total-height: 1616px;
+$assets-subtract-image: '../sprite/sprite.png';
+$assets-subtract: (2315px, 965px, -2315px, -965px, 97px, 97px, 2718px, 1616px, '../sprite/sprite.png', 'assets_subtract', );
+$assets-team-name: 'assets_team';
+$assets-team-x: 1920px;
+$assets-team-y: 965px;
+$assets-team-offset-x: -1920px;
+$assets-team-offset-y: -965px;
+$assets-team-width: 99px;
+$assets-team-height: 97px;
+$assets-team-total-width: 2718px;
+$assets-team-total-height: 1616px;
+$assets-team-image: '../sprite/sprite.png';
+$assets-team: (1920px, 965px, -1920px, -965px, 99px, 97px, 2718px, 1616px, '../sprite/sprite.png', 'assets_team', );
+$assets-trophy-name: 'assets_trophy';
+$assets-trophy-x: 0px;
+$assets-trophy-y: 1080px;
+$assets-trophy-offset-x: 0px;
+$assets-trophy-offset-y: -1080px;
+$assets-trophy-width: 600px;
+$assets-trophy-height: 536px;
+$assets-trophy-total-width: 2718px;
+$assets-trophy-total-height: 1616px;
+$assets-trophy-image: '../sprite/sprite.png';
+$assets-trophy: (0px, 1080px, 0px, -1080px, 600px, 536px, 2718px, 1616px, '../sprite/sprite.png', 'assets_trophy', );
+$assets-winner-banner-name: 'assets_winner_banner';
+$assets-winner-banner-x: 1920px;
+$assets-winner-banner-y: 892px;
+$assets-winner-banner-offset-x: -1920px;
+$assets-winner-banner-offset-y: -892px;
+$assets-winner-banner-width: 312px;
+$assets-winner-banner-height: 73px;
+$assets-winner-banner-total-width: 2718px;
+$assets-winner-banner-total-height: 1616px;
+$assets-winner-banner-image: '../sprite/sprite.png';
+$assets-winner-banner: (1920px, 892px, -1920px, -892px, 312px, 73px, 2718px, 1616px, '../sprite/sprite.png', 'assets_winner_banner', );
+$bg-name: 'bg';
+$bg-x: 0px;
+$bg-y: 0px;
+$bg-offset-x: 0px;
+$bg-offset-y: 0px;
+$bg-width: 1920px;
+$bg-height: 1080px;
+$bg-total-width: 2718px;
+$bg-total-height: 1616px;
+$bg-image: '../sprite/sprite.png';
+$bg: (0px, 0px, 0px, 0px, 1920px, 1080px, 2718px, 1616px, '../sprite/sprite.png', 'bg', );
+$round-bg-name: 'round-bg';
+$round-bg-x: 1230px;
+$round-bg-y: 1080px;
+$round-bg-offset-x: -1230px;
+$round-bg-offset-y: -1080px;
+$round-bg-width: 630px;
+$round-bg-height: 506px;
+$round-bg-total-width: 2718px;
+$round-bg-total-height: 1616px;
+$round-bg-image: '../sprite/sprite.png';
+$round-bg: (1230px, 1080px, -1230px, -1080px, 630px, 506px, 2718px, 1616px, '../sprite/sprite.png', 'round-bg', );
+$spritesheet-width: 2718px;
+$spritesheet-height: 1616px;
+$spritesheet-image: '../sprite/sprite.png';
+$spritesheet-sprites: ($45-sec, $assets-x, $assets-add, $assets-circle-check, $assets-clock, $assets-fire, $assets-megaphone, $assets-mouth, $assets-speech-bubble, $assets-subtract, $assets-team, $assets-trophy, $assets-winner-banner, $bg, $round-bg, );
+$spritesheet: (2718px, 1616px, '../sprite/sprite.png', $spritesheet-sprites, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}
