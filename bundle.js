@@ -9567,7 +9567,7 @@ var HotTopics = function (_Component) {
       gameOptions: {
         teams: 1,
         duration: 60,
-        rounds: 2
+        rounds: 3
       }
     };
     _this.onTeamsChange = _this.onTeamsChange.bind(_this);

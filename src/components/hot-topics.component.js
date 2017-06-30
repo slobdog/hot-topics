@@ -14,7 +14,7 @@ class HotTopics extends Component {
       gameOptions: {
         teams: 1,
         duration: 60,
-        rounds: 2
+        rounds: 3
       }
     }
     this.onTeamsChange = this.onTeamsChange.bind(this);
