@@ -16,6 +16,14 @@ let NewGame = (props) => {
               <span className="option__increment" onClick={() => {props.onTeamsChange(1)}}>+</span>
             </div>
           </li>
+          <li className="option__item option__item--number clearfix">
+            <span className="option__title">Number of rounds</span>
+            <div className="option__wrap">
+              <span className="option__dicrement" onClick={() => {props.onRoundsChange(-1)}}>-</span>
+              <input type="text" value={props.rounds} className="option__input" />
+              <span className="option__increment" onClick={() => {props.onRoundsChange(1)}}>+</span>
+            </div>
+          </li>
           <li className="option__item option__item--round clearfix">
             <span className="option__title">Round duration<br />
               <span className="option__title--subtitle">(seconds)</span>
@@ -28,8 +36,8 @@ let NewGame = (props) => {
           </li>
         </ul>
         <div className="content__buttons">
-          <a className="content__button content__button--green" onClick={props.startGame}>NEXT</a>
           <a className="content__button content__button--options" onClick={props.backToHomeScreen}>BACK</a>
+          <a className="content__button content__button--green" onClick={props.startGame}>NEXT</a>
         </div>
       </div>
     </div>

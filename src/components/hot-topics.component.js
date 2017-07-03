@@ -19,6 +19,7 @@ class HotTopics extends Component {
     }
     this.onTeamsChange = this.onTeamsChange.bind(this);
     this.onDurationChange = this.onDurationChange.bind(this);
+    this.onRoundsChange = this.onRoundsChange.bind(this);
   }
 
   setGameStatus(option) {
@@ -45,6 +46,16 @@ class HotTopics extends Component {
     }
   }
 
+  onRoundsChange(delta) {
+    if (delta === 1
+        && this.state.gameOptions.rounds < 3
+        || delta === -1
+        && this.state.gameOptions.rounds > 1) {
+      this.state.gameOptions.rounds += delta;
+      this.setState(this.state);
+    }
+  }
+
   render() {
     let currentView = '';
     switch (this.state.gameStatus) {
@@ -60,6 +71,8 @@ class HotTopics extends Component {
           onTeamsChange={this.onTeamsChange}
           duration={this.state.gameOptions.duration}
           onDurationChange={this.onDurationChange}
+          rounds={this.state.gameOptions.rounds}
+          onRoundsChange={this.onRoundsChange}
           startGame={() => {this.setGameStatus('scoreboard')}} />;
         break;
       case 'how-to-play':
@@ -71,7 +84,8 @@ class HotTopics extends Component {
           backToHomeScreen={() => {this.setGameStatus('home')}}
           startNewRound={() => {this.setGameStatus('new-round')}}
           teams={this.state.gameOptions.teams}
-          rounds={this.state.gameOptions.rounds} />
+          rounds={this.state.gameOptions.rounds}
+          duration={this.state.gameOptions.duration} />
         break;
     }
 

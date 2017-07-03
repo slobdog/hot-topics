@@ -47,7 +47,10 @@ let ScoreboardTable = (props) => {
             </tr>
           </tbody>
         </table>
-        <div className="content__buttons"><a className="content__button content__button--options" onClick={props.backToHomeScreen}>BACK</a><a className="content__button content__button--options" onClick={props.startNewRound}>CONTINUE</a></div>
+        <div className="content__buttons">
+          {/*<a className="content__button content__button--options" onClick={props.backToHomeScreen}>BACK</a>*/}
+          <a className="content__button content__button--options" onClick={props.startNewRound}>CONTINUE</a>
+        </div>
       </div>
     </div>
   );

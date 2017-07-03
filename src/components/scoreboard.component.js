@@ -57,6 +57,12 @@ class Scoreboard extends Component {
     }
     this.setCurrentView(currentView);
   };
+  goToWinnersPage() {
+    this.setState({
+      winnerTeam: this.selectWinnerTeam(this.state.totalTeamScore)
+    })
+    this.setCurrentView('winners');
+  }
   selectWinnerTeam(totalTeamScore) {
     let winnerScore = Math.max.apply(null, totalTeamScore);
     let winnerTeam = totalTeamScore.indexOf(winnerScore) + 1;
@@ -97,12 +103,13 @@ class Scoreboard extends Component {
         currentView = <NewRound
           backToScoreboard={() => {this.setCurrentView('scoreboard')}}
           startRound={() => {this.setCurrentView('round')}}
-          onGameEnd={this.props.backToHomeScreen}
+          onGameEnd={() => {this.goToWinnersPage()}}
           currentTeam={this.state.currentTeam}
           currentRound={this.state.currentRound} />
         break;
       case 'round':
         currentView = <Round
+          duration={this.props.duration}
           currentTeam={this.state.currentTeam}
           onRoundReset={this.roundReset}
           onRoundFinish={this.roundFinish} />

@@ -9856,7 +9856,7 @@ var HotTopics = function (_Component) {
       gameStatus: 'home',
       gameOptions: {
         teams: 1,
-        duration: 4,
+        duration: 60,
         rounds: 3
       }
     };
