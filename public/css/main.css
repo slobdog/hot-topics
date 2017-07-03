@@ -4,6 +4,7 @@ ul, li, p, h1, h2, h3, h4 {
   margin: 0; }
 
 a {
+  cursor: pointer;
   color: #fff; }
 
 a:hover {
@@ -317,6 +318,27 @@ html, body {
   .content__button--green:hover {
     color: #f2fbce; }
 
+  .content__button--blue {
+    background-color: #36ADC9;
+    color: #F2FBCE;
+    -webkit-border-radius: 20px;
+            border-radius: 20px;
+    -webkit-box-shadow: 0px 12px 0px 0px #144C5F;
+            box-shadow: 0px 12px 0px 0px #144C5F;
+    -webkit-transition: all ease 0.2s;
+    transition: all ease 0.2s;
+    font-family: 'BebasNeue Bold'; }
+    .content__button--blue:active {
+      position: relative;
+      top: 3px;
+      -webkit-box-shadow: 0px 3px 0px 0px #144C5F;
+              box-shadow: 0px 3px 0px 0px #144C5F; }
+    .content__button--blue:focus {
+      color: #f2fbce;
+      text-decoration: none; }
+    .content__button--blue:hover {
+      color: #f2fbce; }
+
 .content__button {
   -webkit-border-radius: 10px;
           border-radius: 10px; }
@@ -500,7 +522,6 @@ html, body {
 .header--team {
   margin-bottom: 90px; }
   .header--team .header__title {
-    background-color: #ffd22f;
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
     font-size: 46px;
@@ -511,19 +532,46 @@ html, body {
     font-size: 70px; }
   .header--team .header__title--number {
     background-color: #fff;
-    color: #ffd22f;
     margin-left: 30px;
     -webkit-border-radius: 50%;
     border-radius: 50%;
     padding: 0 30px;
     font-size: 65px; }
 
+  .header--team .header__title.team--0 {
+    background-color: #86d3cc;
+  }
+  .header--team .header__title--number.team-0 {
+    color: #86d3cc;
+  }
+
+  .header--team .header__title.team--1 {
+    background-color: #f9c41b;
+  }
+  .header--team .header__title--number.team-1 {
+    color: #f9c41b;
+  }
+
+  .header--team .header__title.team--2 {
+    background-color: #d44940;
+  }
+  .header--team .header__title--number.team-2 {
+    color: #d44940;
+  }
+
+  .header--team .header__title.team--3 {
+    background-color: #abd14c;
+  }
+  .header--team .header__title--number.team-3 {
+    color: #abd14c;
+  }
+
 .timer {
+  width: 250px;
+  height: 250px;
   background-image: url(../img/45_sec.png);
-  min-height: 439px;
-  background-size: 80%;
+  background-size: 250px;
   background-repeat: no-repeat;
-  background-position-x: 45%;
   position: relative; }
 
 .timer .timer__numbers {
@@ -543,7 +591,8 @@ html, body {
   border: 10px solid #ffb808;
   -webkit-border-radius: 80px;
           border-radius: 80px;
-  margin-top: 60px; }
+  margin-top: 60px;
+  margin-bottom: 90px; }
 
 .score__title {
   color: #f2fbce;
@@ -591,10 +640,12 @@ html, body {
   top: 28%; }
 
 .score__button {
-  display: inline; }
+  display: block;
+  max-width: 240px;
+  margin: 0 auto 30px; }
 
 .score-plus {
-      content: '';
+    content: '';
     width: 50px;
     height: 50px;
     position: absolute;
@@ -775,7 +826,6 @@ svg {
   right: 37%; }
 
 .header--results .header__title {
-  background-color: #86d3cc;
   font-family: 'Quicksand', sans-serif;
   font-weight: bold;
   font-size: 46px;
@@ -785,6 +835,22 @@ svg {
   margin-bottom: 20px;
   font-size: 70px;
   color: #fffbe7; }
+
+.header--results .header__title .team--0 {
+  background-color: #86d3cc;
+}
+
+.header--results .header__title .team--1 {
+  background-color: #f9c41b;
+}
+
+.header--results .header__title .team--2 {
+  background-color: #d44940;
+}
+
+.header--results .header__title .team--3 {
+  background-color: #abd14c;
+}
 
 .header--results .header__title--number {
   background-color: #fffbe7;
