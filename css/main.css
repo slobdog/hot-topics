@@ -584,6 +584,7 @@ html, body {
   z-index: 999;}
 
 .category-title {
+  min-height: 148px;
   font-family: 'BebasNeue Bold';
   font-size: 90px;
   color: #5b6b75;
@@ -667,7 +668,7 @@ html, body {
   background-repeat: no-repeat;
   background-size: 95%;
   right: 0;
-  top: 40%;
+  top: 50%;
   cursor: pointer;
   z-index: 999;
 }
