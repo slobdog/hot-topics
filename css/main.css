@@ -589,11 +589,26 @@ html, body {
   font-size: 90px;
   color: #5b6b75;
   background-color: #f0f1e2;
-  border: 10px solid #ffb808;
   -webkit-border-radius: 80px;
           border-radius: 80px;
   margin-top: 60px;
   margin-bottom: 90px; }
+
+  .category-title.border--0 {
+    border: 10px solid #86d3cc;
+  }
+
+  .category-title.border--1 {
+    border: 10px solid #f9c41b;
+  }
+
+  .category-title.border--2 {
+    border: 10px solid #d44940;
+  }
+
+  .category-title.border--3 {
+    border: 10px solid #abd14c;
+  }
 
 .score__title {
   color: #f2fbce;
@@ -619,7 +634,6 @@ html, body {
     margin-right: 10px; }
 
 .score-list__number {
-  color: #ffb808;
   font-family: 'BebasNeue Bold';
   display: inline-block;
   background-color: #f0f1e2;
@@ -628,6 +642,24 @@ html, body {
   -webkit-border-radius: 30px;
           border-radius: 30px;
   padding: 0 31px; }
+
+  .score-list__number.color--0 {
+    color: #86d3cc;
+  }
+
+  .score-list__number.color--1 {
+    color: #f9c41b;
+  }
+
+  .score-list__number.color--2 {
+    color: #d44940;
+  }
+
+  .score-list__number.color--3 {
+    color: #abd14c;
+  }
+
+
 
 .score-list__number--first:after {
   content: '';

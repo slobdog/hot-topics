@@ -10257,7 +10257,7 @@ var Round = function (_Component) {
               { className: 'col-md-4 team-wrapper' },
               _react2.default.createElement(
                 'h1',
-                { className: 'category-title' },
+                { className: "category-title border--" + teamIndex },
                 this.state.started ? this.props.currentTopic : ''
               ),
               gameControls
@@ -10281,7 +10281,7 @@ var Round = function (_Component) {
                     { className: 'score-list__item' },
                     _react2.default.createElement(
                       'span',
-                      { className: 'score-list__number score-list__number--first' },
+                      { className: "score-list__number score-list__number--first color--" + teamIndex },
                       this.state.scoreFirstDigit
                     )
                   ),
@@ -10290,7 +10290,7 @@ var Round = function (_Component) {
                     { className: 'score-list__item' },
                     _react2.default.createElement(
                       'span',
-                      { className: 'score-list__number' },
+                      { className: "score-list__number color--" + teamIndex },
                       this.state.scoreSecondDigit
                     )
                   )
@@ -10979,7 +10979,7 @@ var Timer = function (_Component) {
 Timer.defaultProps = {
   seconds: 15,
   size: 190,
-  color: '#FFB808',
+  color: '#7DD29F',
   alpha: 1,
   timeFormat: 'hms',
   showMilliseconds: true,
