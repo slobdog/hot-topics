@@ -9566,7 +9566,7 @@ var HotTopics = function (_Component) {
       currentView: 'home',
       gameOptions: {
         teams: 1,
-        duration: 1,
+        duration: 60,
         rounds: 3
       }
     };
@@ -10911,12 +10911,9 @@ var Timer = function (_Component) {
   }, {
     key: 'formattedTime',
     value: function formattedTime() {
-      var decimals = void 0,
-          ref = void 0,
-          seconds = void 0,
+      var seconds = void 0,
           timeParts = void 0;
-      decimals = ref = this.seconds <= 9.9 && this.props.showMilliseconds;
-      seconds = this.seconds.toFixed(decimals);
+      seconds = this.seconds.toFixed();
       timeParts = [];
       timeParts.push(seconds);
       return timeParts;
