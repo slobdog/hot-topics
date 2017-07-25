@@ -808,7 +808,6 @@ html, body {
   min-height: 148px;
   font-family: 'BebasNeue Bold';
   font-size: 50px;
-  padding-top: 30px;
   color: #5b6b75;
   background-color: #f0f1e2;
   -webkit-border-radius: 80px;
@@ -817,6 +816,12 @@ html, body {
   margin: 60px auto 90px auto;
   width: 295px;
   height: 150px; }
+  .category-title:before {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 100%;
+    vertical-align: middle; }
 
 .category-title.border--0 {
   border: 10px solid #86d3cc; }
@@ -1000,22 +1005,6 @@ svg {
   -moz-box-align: center;
        align-items: center; }
 
-.main-table__text--number.won1 {
-  background-color: #86d3cc;
-}
-
-.main-table__text--number.won2 {
-  background-color: #f9c41b;
-}
-
-.main-table__text--number.won3 {
-  background-color: #d44940;
-}
-
-.main-table__text--number.won4 {
-  background-color: #abd14c;
-}
-
 .main-table__head-text-word {
   font-family: 'Quicksand', sans-serif;
   font-weight: bold;
@@ -1100,7 +1089,7 @@ svg {
     height: 100%; }
   .wrapper-team .results-col {
     display: table-cell;
-    vertical-align: bottom;
+    vertical-align: middle;
     width: 45%;
     text-align: center; }
     @media (max-width: 870px) {
@@ -1133,6 +1122,15 @@ svg {
     font-size: 40px; }
   .wrapper-team .header__title-content {
     margin: 0 15px; }
+  .wrapper-team .star {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url("../img/star.png") no-repeat center;
+    -moz-background-size: contain;
+      -o-background-size: contain;
+         background-size: contain;
+    margin: 0 3px; }
 
 .star {
   display: inline-block;
@@ -2789,7 +2787,7 @@ svg {
     transition: transform 0.4s;
     transition: transform 0.4s, -webkit-transform 0.4s, -moz-transform 0.4s, -o-transform 0.4s; }
 
-.loaded .main-img__image {
+.load .main-img__image {
   -webkit-transform: translate(0, 0);
      -moz-transform: translate(0, 0);
       -ms-transform: translate(0, 0);
@@ -2816,10 +2814,10 @@ svg {
        -o-animation-fill-mode: forwards;
           animation-fill-mode: forwards; }
 
-.loaded .new-game {
+.load .new-game {
   overflow: visible; }
-  .loaded .new-game .new-game__title,
-  .loaded .new-game .wobble-bubble {
+  .load .new-game .new-game__title,
+  .load .new-game .wobble-bubble {
     -webkit-animation-name: bubble-up;
        -moz-animation-name: bubble-up;
          -o-animation-name: bubble-up;
@@ -2840,6 +2838,14 @@ svg {
        -moz-animation-fill-mode: forwards;
          -o-animation-fill-mode: forwards;
             animation-fill-mode: forwards; }
+
+.wrapper {
+  opacity: 1;
+  visibility: visible; }
+
+.load.unload .wrapper {
+  opacity: 0;
+  visibility: hidden; }
 
 .content__buttons a, .next-buttons a, .new-game-btns a {
   opacity: 0;
@@ -2865,7 +2871,7 @@ svg {
          -o-transform: translate(0, 100px);
             transform: translate(0, 100px); }
 
-.loaded .content__buttons a, .loaded .next-buttons a, .loaded .new-game-btns a {
+.load .content__buttons a, .load .next-buttons a, .load .new-game-btns a {
   opacity: 1;
   -webkit-transform: translate(0, 0);
      -moz-transform: translate(0, 0);
@@ -2873,14 +2879,14 @@ svg {
        -o-transform: translate(0, 0);
           transform: translate(0, 0); }
 
-.loaded.wrapper-new-team header {
+.load .wrapper-new-team header {
   opacity: 1; }
 
-.loaded.wrapper-new-team .content__button {
+.load .wrapper-new-team .content__button {
   bottom: 0;
   opacity: 1; }
 
-.loaded.wrapper-new-team .playing-team-decoration {
+.load .wrapper-new-team .playing-team-decoration {
   top: 0;
   opacity: 1; }
 
@@ -2891,43 +2897,43 @@ svg {
     -o-transition: all 0.7s;
     -moz-transition: all 0.7s;
     transition: all 0.7s;
-    -webkit-transform: translate(100px, 0);
-       -moz-transform: translate(100px, 0);
-        -ms-transform: translate(100px, 0);
-         -o-transform: translate(100px, 0);
-            transform: translate(100px, 0); }
+    -webkit-transform: translate(50px, 0);
+       -moz-transform: translate(50px, 0);
+        -ms-transform: translate(50px, 0);
+         -o-transform: translate(50px, 0);
+            transform: translate(50px, 0); }
   .wrapper-game-options .option__item:nth-of-type(2) {
     -webkit-transition: all 1.2s;
     -o-transition: all 1.2s;
     -moz-transition: all 1.2s;
     transition: all 1.2s;
-    -webkit-transform: translate(160px, 0);
-       -moz-transform: translate(160px, 0);
-        -ms-transform: translate(160px, 0);
-         -o-transform: translate(160px, 0);
-            transform: translate(160px, 0); }
+    -webkit-transform: translate(110px, 0);
+       -moz-transform: translate(110px, 0);
+        -ms-transform: translate(110px, 0);
+         -o-transform: translate(110px, 0);
+            transform: translate(110px, 0); }
   .wrapper-game-options .option__item:nth-of-type(3) {
     -webkit-transition: all 1.7s;
     -o-transition: all 1.7s;
     -moz-transition: all 1.7s;
     transition: all 1.7s;
-    -webkit-transform: translate(220px, 0);
-       -moz-transform: translate(220px, 0);
-        -ms-transform: translate(220px, 0);
-         -o-transform: translate(220px, 0);
-            transform: translate(220px, 0); }
+    -webkit-transform: translate(170px, 0);
+       -moz-transform: translate(170px, 0);
+        -ms-transform: translate(170px, 0);
+         -o-transform: translate(170px, 0);
+            transform: translate(170px, 0); }
   .wrapper-game-options .option__item:nth-of-type(4) {
     -webkit-transition: all 2.2s;
     -o-transition: all 2.2s;
     -moz-transition: all 2.2s;
     transition: all 2.2s;
-    -webkit-transform: translate(280px, 0);
-       -moz-transform: translate(280px, 0);
-        -ms-transform: translate(280px, 0);
-         -o-transform: translate(280px, 0);
-            transform: translate(280px, 0); }
+    -webkit-transform: translate(230px, 0);
+       -moz-transform: translate(230px, 0);
+        -ms-transform: translate(230px, 0);
+         -o-transform: translate(230px, 0);
+            transform: translate(230px, 0); }
 
-.loaded .wrapper-game-options .option__item {
+.load .wrapper-game-options .option__item {
   opacity: 1;
   -webkit-transform: translate(0, 0);
      -moz-transform: translate(0, 0);
@@ -2940,71 +2946,80 @@ svg {
 
 .wrapper-total .main-table th:nth-of-type(2),
 .wrapper-total .main-table td:nth-of-type(2) {
-  -webkit-transition: all 0.7s;
-  -o-transition: all 0.7s;
-  -moz-transition: all 0.7s;
-  transition: all 0.7s;
-  -webkit-transform: translate(0, -100px);
-     -moz-transform: translate(0, -100px);
-      -ms-transform: translate(0, -100px);
-       -o-transform: translate(0, -100px);
-          transform: translate(0, -100px); }
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: translate(0, -50px);
+     -moz-transform: translate(0, -50px);
+      -ms-transform: translate(0, -50px);
+       -o-transform: translate(0, -50px);
+          transform: translate(0, -50px); }
 
 .wrapper-total .main-table th:nth-of-type(3),
 .wrapper-total .main-table td:nth-of-type(3) {
-  -webkit-transition: all 1.2s;
-  -o-transition: all 1.2s;
-  -moz-transition: all 1.2s;
-  transition: all 1.2s;
-  -webkit-transform: translate(0, -200px);
-     -moz-transform: translate(0, -200px);
-      -ms-transform: translate(0, -200px);
-       -o-transform: translate(0, -200px);
-          transform: translate(0, -200px); }
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  -moz-transition: all 1s;
+  transition: all 1s;
+  -webkit-transform: translate(0, -150px);
+     -moz-transform: translate(0, -150px);
+      -ms-transform: translate(0, -150px);
+       -o-transform: translate(0, -150px);
+          transform: translate(0, -150px); }
 
 .wrapper-total .main-table th:nth-of-type(4),
 .wrapper-total .main-table td:nth-of-type(4) {
-  -webkit-transition: all 1.7s;
-  -o-transition: all 1.7s;
-  -moz-transition: all 1.7s;
-  transition: all 1.7s;
-  -webkit-transform: translate(0, -300px);
-     -moz-transform: translate(0, -300px);
-      -ms-transform: translate(0, -300px);
-       -o-transform: translate(0, -300px);
-          transform: translate(0, -300px); }
+  -webkit-transition: all 1.5s;
+  -o-transition: all 1.5s;
+  -moz-transition: all 1.5s;
+  transition: all 1.5s;
+  -webkit-transform: translate(0, -250px);
+     -moz-transform: translate(0, -250px);
+      -ms-transform: translate(0, -250px);
+       -o-transform: translate(0, -250px);
+          transform: translate(0, -250px); }
 
 .wrapper-total .main-table th:nth-of-type(5),
 .wrapper-total .main-table td:nth-of-type(5) {
-  -webkit-transition: all 2.2s;
-  -o-transition: all 2.2s;
-  -moz-transition: all 2.2s;
-  transition: all 2.2s;
-  -webkit-transform: translate(0, -400px);
-     -moz-transform: translate(0, -400px);
-      -ms-transform: translate(0, -400px);
-       -o-transform: translate(0, -400px);
-          transform: translate(0, -400px); }
+  -webkit-transition: all 2s;
+  -o-transition: all 2s;
+  -moz-transition: all 2s;
+  transition: all 2s;
+  -webkit-transform: translate(0, -350px);
+     -moz-transform: translate(0, -350px);
+      -ms-transform: translate(0, -350px);
+       -o-transform: translate(0, -350px);
+          transform: translate(0, -350px); }
 
 .wrapper-total .main-table th:nth-of-type(6),
 .wrapper-total .main-table td:nth-of-type(6) {
-  -webkit-transition: all 2.7s;
-  -o-transition: all 2.7s;
-  -moz-transition: all 2.7s;
-  transition: all 2.7s;
-  -webkit-transform: translate(0, -500px);
-     -moz-transform: translate(0, -500px);
-      -ms-transform: translate(0, -500px);
-       -o-transform: translate(0, -500px);
-          transform: translate(0, -500px); }
+  -webkit-transition: all 2.5s;
+  -o-transition: all 2.5s;
+  -moz-transition: all 2.5s;
+  transition: all 2.5s;
+  -webkit-transform: translate(0, -450px);
+     -moz-transform: translate(0, -450px);
+      -ms-transform: translate(0, -450px);
+       -o-transform: translate(0, -450px);
+          transform: translate(0, -450px); }
 
-.loaded .wrapper-total .main-table td, .loaded .wrapper-total .main-table th {
+.load .wrapper-total .main-table td, .load .wrapper-total .main-table th {
   opacity: 1;
   -webkit-transform: translate(0, 0);
      -moz-transform: translate(0, 0);
       -ms-transform: translate(0, 0);
        -o-transform: translate(0, 0);
           transform: translate(0, 0); }
+
+.wrapper-round {
+  opacity: 0;
+  -webkit-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  transition: all 0.8s; }
+  .load .wrapper-round {
+    opacity: 1; }
 
 .wrapper-team .winner-sparkle {
   background-repeat: no-repeat;
